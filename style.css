@@ -14,6 +14,7 @@ header {
   background-color: #135d66;
   color: #e3fef7;
   padding: 10px;
+  width: 100vw;
 }
 
 h1 {
@@ -96,6 +97,7 @@ footer {
 
 .progress-bar {
   height: 100%;
+  width: 100vw;
   background-color: #e3fef7;
   border-radius: 5px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
