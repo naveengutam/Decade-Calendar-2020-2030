@@ -1,0 +1,104 @@
+html,
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #003c43;
+  color: #e3fef7;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: #135d66;
+  color: #e3fef7;
+  padding: 10px;
+}
+
+h1 {
+  font-family: CPMono, monospace;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto repeat(31, minmax(30px, 1fr));
+  gap: 2px;
+  padding: 10px;
+  padding-bottom: 60px; /* Adjusted bottom padding */
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.year {
+  background-color: #77b0aa;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  grid-row: span 12;
+  color: #003c43;
+  border-radius: 2px;
+}
+
+.month {
+  background-color: #135d66;
+  text-align: center;
+  padding: 5px;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e3fef7;
+  border-radius: 2px;
+}
+
+.day {
+  background-color: #77b0aa;
+  height: 30px;
+  width: calc((100vw - 70px) / 33);
+  text-align: center;
+  line-height: 30px;
+  color: #003c43;
+  border-radius: 2px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.empty {
+  opacity: 0.5;
+}
+
+.past {
+  background-color: #ff9800;
+  color: #003c43;
+}
+
+.current {
+  background-color: #90d26d;
+  color: #003c43;
+}
+
+.future {
+  background-color: #e3fef7;
+  color: #003c43;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: #135d66;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #e3fef7;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  transition: width 0.5s ease-in-out;
+}
