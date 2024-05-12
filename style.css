@@ -27,7 +27,7 @@ main {
   width: 100vw;
   display: grid;
   grid-template-columns: auto auto repeat(31, minmax(30px, 1fr));
-  gap: 2px;
+  gap: 1px;
   padding: 10px;
   padding-bottom: 60px; /* Adjusted bottom padding */
   border-radius: 2px;
